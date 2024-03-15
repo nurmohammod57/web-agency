@@ -1,0 +1,817 @@
+/* ________________________________________ Common CSS Start ____________ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #1C1E53;
+    --white-color: #ffffff;
+    --yellow-color: #FCD980;
+    --blue-color: #2405F2;
+    --dark-blue-color: #282938;
+    --section-color: #F4F6FC;
+    --poppins-font: "Poppins", sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+/* _______ Arrow Button Start */
+.arrow-btn{
+    display: inline-block;
+    font-family: var(--poppins-font);
+    transition: .4s;
+}
+/* _______ Arrow Button End */
+
+/* ________________________________________ Common CSS End ____________ */
+
+/* ________________________________________ Nav Area Start ____________ */
+
+#navigation{
+    background: var(--main-color);
+    padding: 16px 0;
+}
+.nav-area{
+    align-items: center;
+}
+.nav-area .site-logo{
+    width: 20%;
+}
+.nav-area .nav-bar{
+    width: 60%;
+}
+.nav-area .nav-bar ul{
+    justify-content: flex-end;
+    column-gap: 32px;
+    font-family: var(--poppins-font);
+    color: #BBBBCB;
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav-area .nav-bar ul li{
+    cursor: pointer;
+    transition: .4s;
+}
+.nav-area .nav-bar ul li:first-child{
+    color: var(--white-color);
+}
+.nav-area .nav-bar ul li:hover{
+    color: var(--white-color);
+}
+.nav-area .nav-button{
+    width: 20%;
+    justify-content: flex-end;
+}
+.nav-area .nav-button a{
+    font-family: var(--poppins-font);
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 48px;
+    border-radius: 41px;
+    border: 2px solid rgba(242, 244, 252, 20%);
+    transition: .4s;
+}
+.nav-area .nav-button a:hover{
+    background: var(--yellow-color);
+    color: #1B1C2B;
+}
+
+/* ________________________________________ Nav Area End ____________ */
+
+/* ________________________________________ Hero Section Start ____________ */
+
+#hero-section{
+    background: var(--main-color);
+    padding: 126px 0;
+}
+.hero-area{
+    column-gap: 60px;
+}
+.hero-left-area .hero-content h1{
+    font-family: var(--poppins-font);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+.hero-left-area .hero-content p{
+    font-family: var(--poppins-font);
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    width: 405px;
+}
+.hero-area-btns{
+    margin-top: 48px;
+    align-items: center;
+    column-gap: 40px;
+}
+.hero-area-btns .our-work-btn{
+    display: inline-block;
+    border: 0;
+    background: var(--yellow-color);
+    padding: 16px 56px;
+    color: #1B1C2B;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 41px;
+    font-family: "Manrope", sans-serif;
+    transition: .4s;
+}
+.hero-area-btns .our-work-btn:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.hero-area-btns .pricing-btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.hero-area-btns .pricing-btn:hover{
+    padding: 12px 48px;
+    border-radius: 41px;
+    border: 2px solid rgba(242, 244, 252, 20%);
+}
+.hero-area-btns .pricing-btn i{
+    margin-left: 16px;
+    color: var(--section-color);
+}
+/* ________________________________________ Hero Section End ____________ */
+
+/* ________________________________________ How We Work Section Start ____________ */
+
+#we-work-section{
+    background: var(--section-color);
+    padding: 128px 0;
+}
+.we-work-area h2{
+    color: var(--dark-blue-color);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-family: var(--poppins-font);
+    line-height: 64px;
+}
+.we-work-area p{
+    color: var(--dark-blue-color);
+    margin-bottom: 16px;
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    width: 405px;
+}
+.we-work-area .get-in-touch-btn i{
+    color: var(--blue-color);
+    margin: 5px 0 0 16px;
+
+}
+.we-work-area .get-in-touch-btn{
+    color: var(--blue-color);
+    font-size: 18px;
+}
+.we-work-area .get-in-touch-btn:hover{
+    margin-left: 20px;
+}
+.we-work-area .right-side{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 48px;
+    column-gap: 25px;
+}
+.we-work-area .right-side div{
+    width: 328px;
+}
+.we-work-area .right-side img{
+    margin-bottom: 16px;
+}
+.we-work-area .right-side h2{
+    font-family: var(--poppins-font);
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    color: var(--dark-blue-color);
+    margin-bottom: 8px;
+}
+.we-work-area .right-side p{
+    width: 303px;
+    color: var(--dark-blue-color);
+    font-size: 16px;
+    line-height: 28px;
+}
+/* ________________________________________ How We Work Section End ____________ */
+/* ________________________________________ Project Area Section Start ____________ */
+#our-project-section{
+    padding: 128px 0;
+}
+.our-project-area .project-heading{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.our-project-area .project-Image{
+    column-gap: 32px;
+}
+.our-project-area .project-heading h2{
+    color: var(--dark-blue-color);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-family: var(--poppins-font);
+    line-height: 64px;
+}
+.our-project-area .project-heading p{
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    line-height: 28px;
+}
+.project-Image .left-images{
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+.project-Image .left-images img{
+    display: block;
+    width: 100%;
+}
+.project-Image .left-images-overlay{
+    background-image: linear-gradient(135deg, rgba(28, 30, 83, 42%),rgba(28, 30, 83, 100%));
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: .4s;
+    padding: 0 0 76px 48px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.project-Image .left-images:hover .left-images-overlay{
+    left: 0%;
+}
+.left-images-overlay h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: 36px;
+    width: 313px;
+    font-family: var(--poppins-font);
+    margin-bottom: 16px;
+}
+.left-images-overlay p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+    line-height: 28px;
+    width: 293px;
+    font-family: var(--poppins-font);
+    margin-bottom: 40px;
+}
+.left-images-overlay .view-project-btn {
+    color: var(--yellow-color);
+    font-size: 16px;
+    line-height: 28px;
+}
+.left-images-overlay .view-project-btn i {
+    margin-left: 14px;
+}
+.project-Image .right-images{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+.right-images .top-part{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.right-images .top-part img{
+    display: block;
+    width: 100%;
+}
+.right-images .right-top-overlay{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(28, 30, 83, 42%),rgba(28, 30, 83, 100%));
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: .4s;
+    padding: 129px 59px 0;
+}
+.right-images .top-part:hover .right-top-overlay{
+    top: 0;
+}
+.right-top-overlay h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: 36px;
+    width: 280px;
+    font-family: var(--poppins-font);
+    margin-bottom: 16px;
+}
+.right-top-overlay .view-project-btn {
+    color: var(--yellow-color);
+    font-size: 16px;
+    line-height: 28px;
+}
+.right-top-overlay .view-project-btn i {
+    margin-left: 14px;
+}
+.right-images .bottom-part{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.right-images .bottom-part img{
+    display: block;
+    width: 100%;
+}
+.right-images .right-bottom-overlay{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(28, 30, 83, 42%),rgba(28, 30, 83, 100%));
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .4s;
+}
+.right-images .bottom-part:hover .right-bottom-overlay{
+    top: 0;
+}
+
+/* ________________________________________ Project Area Section End ____________ */
+/* ________________________________________ Features Section Start ____________ */
+
+#feature-section{
+    padding: 128px 0;
+    background: var(--section-color);
+}
+.feature-area h5{
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--dark-blue-color);
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+.feature-area h2{
+    font-family: var(--poppins-font);
+    font-size: 48px;
+    line-height: 64px;
+    color: var(--dark-blue-color);
+    margin-bottom: 47px;
+    font-weight: 600;
+    width: 630px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 47px;
+}
+.features{
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+}
+.features .card {
+    padding: 48px;
+    background: var(--white-color);
+    width: 405px;
+}
+.features .card h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: var(--poppins-font);
+    margin: 22px 0 12px 0;
+    color: var(--dark-blue-color);
+}
+.features .card p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    width: 325px;
+    color: var(--dark-blue-color);
+}
+/* ________________________________________ Features Section End ____________ */
+/* ________________________________________ Client Section End ____________ */
+
+#client-section{
+    background : #f4f6fc8d;
+    padding: 128px 0;
+}
+.client-area .client-left{
+    width: 35%;
+}
+.client-area .client-left h2{
+    font-size: 38px;
+    line-height: 56px;
+    font-weight: 600;
+    color: var(--dark-blue-color);
+    font-family: var(--poppins-font);
+    width: 327px;
+    margin-bottom: 16px;
+}
+.client-area .client-left p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--dark-blue-color);
+    font-family: var(--poppins-font);
+    width: 327px;
+}
+.client-area .client-right{
+    width: 65%;
+}
+.client-area .client-right p{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    color: var(--dark-blue-color);
+    font-family: var(--poppins-font);
+    margin-bottom: 48px;
+}
+.client-right .client-info{
+    align-items: center;
+}
+.client-right .client-info img{
+    border-radius: 50%;
+    margin-right: 14px;
+}
+.client-info .client-name h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+}
+.client-info .client-name h5{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+}
+/* ________________________________________ Client Section End ____________ */
+/* ________________________________________ FAQ Section Start ____________ */
+
+#faq-section{
+    padding: 139px 0 128px 0;
+}
+.faq-area .left-part{
+    width: 35%;
+}
+.faq-area .left-part h2{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    width: 328px;
+    margin-bottom: 16px;
+}
+.faq-area .left-part a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--poppins-font);
+    color: var(--blue-color);
+}
+.faq-area .right-part{
+    width: 65%;
+}
+.right-part hr{
+    border: 2px solid #ECECF1;
+    margin: 32px 0;
+
+}
+.right-part .expand-faq h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: var(--poppins-font);
+    color: var(--blue-color);
+    width: 10%;
+}
+.expand-faq .faq-heading{
+    width: 90%;
+    justify-content: space-between;
+}
+.right-part .expand-faq h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    margin-bottom: 16px;
+}
+.right-part .expand-faq p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    width: 624px;
+}
+.right-part .expand-faq i{
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: 5px;
+}
+/* _____________________ Contact Form Start ____________ */
+.contact-form{
+    padding-top: 128px;
+}
+.contact-form .left-side{
+    width: 50%;
+    position: relative;
+}
+.contact-form .left-side img{
+    width: 100%;
+    display: block;
+}
+.contact-form .left-side .img-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(28, 30, 83, .5);
+    padding: 96px;
+}
+.contact-form .left-side h2 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    font-family: var(--poppins-font);
+    color: var(--white-color);
+    width: 464px;
+    margin-bottom: 24px;
+}
+.contact-form .left-side p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--poppins-font);
+    color: var(--white-color);
+    width: 464px;
+}
+.contact-form .right-side{
+    background: var(--main-color);
+    padding: 96px 96px 0;
+    width: 50%;
+}
+.contact-form .right-side h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: var(--poppins-font);
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+.contact-form .right-side p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--poppins-font);
+    color: var(--section-color);
+    margin-bottom: 40px;
+}
+.contact-form .right-side form input{
+    padding: 18px 32px;
+    background: var(--main-color);
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 5%);
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--white-color);
+}
+.contact-form .right-side form input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--poppins-font);
+    color: #ffffff4d;
+  }
+  .contact-form .right-side form .send-query-btn {
+    background: var(--yellow-color);
+    padding: 16px 0;
+    width: 100%;
+    border-radius: 41px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    font-family: "Manrope", sans-serif;
+    color: #1B1C2B;
+    cursor: pointer;
+    margin-top: 23px;
+    transition: .4s;
+  }
+  .contact-form .right-side form .send-query-btn:hover{
+    background: var(--section-color);
+  }
+  .contact-form .right-side a{
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 18px;
+    color: var(--white-color);
+    display: block;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .contact-form .right-side a i{
+    margin: 5px 0 0 10px;
+    display: inline-block;
+  }
+/* _____________________ Contact Form End ____________ */
+
+/* ________________________________________ FAQ Section End ____________ */
+/* ________________________________________ Blog Section Start ____________ */
+#blog-section{
+    padding-bottom: 128px;
+}
+.blog-area h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    margin-bottom: 64px;
+}
+.blog-area .all-blogs{
+    flex-wrap: wrap;
+    column-gap: 32px;
+}
+.blog-area .blog-card {
+    width: 405px;
+}
+.blog-area .blog-card img {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+.blog-area .blog-card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    margin-bottom: 16px;
+}
+.blog-area .blog-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    margin-bottom: 16px;
+}
+.blog-area .blog-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    margin-bottom: 32px;
+}
+.blog-area .blog-card a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--dark-blue-color);
+    font-family: var(--poppins-font);
+    transition: .4s;
+}
+.blog-area .blog-card a:hover{
+    margin-left: 20px;
+}
+.blog-area .blog-card i {
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-left: 10px;
+}
+/* ________________________________________ BlogSection End ____________ */
+/* ________________________________________ Footer Section Start ____________ */
+#footer-section{
+    background: var(--main-color);
+    padding-top: 96px;
+}
+.footer-area{
+    column-gap: 141px;
+}
+.footer-area img{
+    margin-bottom: 22px;
+}
+
+.footer-area .our-slogan{
+    font-size: 16px;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--white-color);
+    margin-bottom: 86px;
+}
+.footer-area .contact-info{
+    background: var(--yellow-color);
+    padding: 17px 37px;
+    column-gap: 29px;
+}
+.footer-area .contact-info h5{
+    font-size: 18px;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--dark-blue-color);
+    margin-bottom: 1px;
+}
+.footer-area .contact-info h6{
+    font-size: 16px;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--dark-blue-color);
+}
+.footer-area .right-area h3{
+    font-size: 48px;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--white-color);
+    margin-bottom: 14px;
+}
+.footer-area .right-area p{
+    font-size: 16px;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--section-color);
+    margin-bottom: 28px;
+}
+.footer-area .right-area .social-icon{
+    column-gap: 20px;
+}
+.footer-area .right-area .social-icon i{
+    color: var(--white-color);
+    font-size: 16px;
+    background: transparent;
+    padding: 12px;
+    border-radius: 50%;
+    transition: .4s;
+
+}
+.footer-area .right-area .social-icon i:hover{
+    background: var(--yellow-color);
+    color: #2405F2;
+}
+#footer-section .footer-menu{
+    background: var(--white-color);
+}
+.footer-menu .copywrite h5{
+    color: var(--dark-blue-color);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: var(--poppins-font);
+    margin: 32px 0;
+}
+.footer-menu .footer-part {
+    justify-content: space-between;
+}
+.footer-part .footer-link ul{
+    column-gap: 32px;
+    font-family: var(--poppins-font);
+    color: var(--dark-blue-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 32px 0;
+}
+.footer-part .footer-link ul li{
+    cursor: pointer;
+    transition: .4s;
+}
+.footer-part .footer-link ul li:hover{
+    color: var(--blue-color);
+}
+/* ________________________________________ Footer Section End ____________ */
+
